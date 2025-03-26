@@ -45,8 +45,8 @@ recvThread.start()
 
 
 print("\nLinus Riddle & Parker Wertz")
-print("Program Name: ")
-print("Date: ")
+print("Program Name: Competition Route ")
+print("Date: 3.26.25")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -57,10 +57,11 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('takeoff')
+        sendmsg('battery?', 1)
+        sendmsg('takeoff', 8)
 
         #Commit Message: First Hoop -Stable
-
+        sendmsg('forward 150')
 
 
         #Commit Message: Second Hoop -Stable
