@@ -61,21 +61,22 @@ try:
         sendmsg('takeoff', 8)
 
         #Commit Message: First Hoop -Stable
-        sendmsg('forward 150')
+        sendmsg('forward 170',8)
 
 
         #Commit Message: Second Hoop -Stable
-
+        sendmsg('go 200 0 50 40',8)
 
 
         #Commit Message: Third Hoop -Stable
-
+        sendmsg('curve 125 200 10 -125 190 10 50', 10)
 
 
         #Commit Message: Final Hoop -Stable
 
 
 
+        sendmsg('battery?', 1)
         sendmsg('land')
 
         print('\nGreat Flight!!!')
