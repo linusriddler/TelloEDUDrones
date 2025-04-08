@@ -65,12 +65,12 @@ try:
 
 
         #Commit Message: Second Hoop -Stable
-        sendmsg('go 200 0 50 40',8)
+        sendmsg('go 225 0 50 40',8)
 
 
         #Commit Message: Third Hoop -Stable
-        sendmsg('curve 125 200 10 -125 190 10 50', 10)
-
+        sendmsg('curve 125 200 10 -125 190 10 50', 12)
+        sendmsg('back 60', 8)
 
         #Commit Message: Final Hoop -Stable
 
